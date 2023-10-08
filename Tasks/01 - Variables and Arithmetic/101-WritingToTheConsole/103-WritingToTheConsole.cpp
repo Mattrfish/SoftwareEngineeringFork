@@ -21,17 +21,18 @@ int main()
     // TASK(b) - Use printf to display the value of the variable area. Look at the lecture slides and find out how to limit this to 3 decimal places
     // Write solution here
     
-    printf("area = %3.3f", area);
+    printf("area = %5.3f\n", area);
 
     // You can output complex strings to the terminal
     int p = 3;
     int q = 4;
-    printf("p=%d, q=%d\n", p, q);
+    printf("p=%d\nq=%d\n", p, q);
 
     // TASK(c) - using printf, display the radius and the area using a single printf statement
     // Write solution here
 
-    //
+    printf("area = %5.3f \nradius = %.2f", area, radius);
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
