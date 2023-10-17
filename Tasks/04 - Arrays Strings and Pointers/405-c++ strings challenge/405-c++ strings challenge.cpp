@@ -20,7 +20,12 @@ int main()
     cout << input << endl;
 
     //Write solution here
+    //size_t loc = input.find("42");
+   //string locNum = input.substr(loc);
+    //cout << "The number that follows title = " << locNum << endl;
 
+   const char* str = input.c_str();
+   cout << str << endl;
 
 
     // Challenge 2 - word count
