@@ -20,22 +20,28 @@ int main()
     cout << input << endl;
 
     //Write solution here
-    //size_t loc = input.find("42");
-   //string locNum = input.substr(loc);
-    //cout << "The number that follows title = " << locNum << endl;
+    size_t loc = input.find("42");
+    string locNum = input.substr(loc, 2);
+    cout << "The number that follows title = " << locNum << endl;
+    cout << "42 is found at location " << loc << endl;
 
-   const char* str = input.c_str();
-   cout << str << endl;
-
+    cout << "type in a word to find out many times it appears" << endl;
 
     // Challenge 2 - word count
     // Type in a sentence, and count the number of time the words "the" appears 
     getline(std::cin, input);   //Read a line (users types this in)
     istringstream iss(input);   //Create a string "stream" (sequence of words)
+    int N;
     string word;                //This will hold the next word
     while (iss >> word) {       //Read the next word (if there is one)
         cout << word << endl;   //Output each word in turn
-    }
 
+        if (word == "the")
+        {
+            N = N++;
+        }
+        
+    }
+    cout << "The word THE was written: " << int<< endl;
 }
 
