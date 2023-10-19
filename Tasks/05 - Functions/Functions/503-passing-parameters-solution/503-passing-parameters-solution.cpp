@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+//function declarations 
+void displayBanner(int stringlen);
+void displayWithinBanner(string message); 
+
 void displayBanner(int stringLen)
 {
 	for (unsigned int n = 0; n < (stringLen + 4); n++) {
