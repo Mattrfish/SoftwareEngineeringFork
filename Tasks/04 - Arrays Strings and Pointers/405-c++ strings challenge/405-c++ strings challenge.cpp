@@ -31,17 +31,17 @@ int main()
     // Type in a sentence, and count the number of time the words "the" appears 
     getline(std::cin, input);   //Read a line (users types this in)
     istringstream iss(input);   //Create a string "stream" (sequence of words)
-    int N;
+    int Num = 0;
     string word;                //This will hold the next word
     while (iss >> word) {       //Read the next word (if there is one)
         cout << word << endl;   //Output each word in turn
 
         if (word == "the")
         {
-            N = N++;
+            Num = Num++;
         }
         
     }
-    cout << "The word THE was written: " << int<< endl;
+    cout << "The word THE was written: " << Num << endl;
 }
 
