@@ -33,7 +33,7 @@ int main()
         cout << "Read the word: " << nextWord << endl;
 
         //We can compare C++ strings using the == operator (very convenient!)
-        if (nextWord == "May") {
+        if (nextWord == "time") {
             cout << "That is what I expected" << endl;
         }
         else {
